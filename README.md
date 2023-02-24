@@ -441,3 +441,7 @@ terraform destroy
 
 <br>
 
+
+## References
+
+- [AWS IAM User Management Practice](https://symplesims.github.io/aws/security/2023/02/15/iam-user-management-practice.html)  
