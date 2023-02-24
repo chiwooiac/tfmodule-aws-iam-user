@@ -1,0 +1,30 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyLargeCreate",
+      "Effect": "Deny",
+      "Action": "rds:CreateDBInstance",
+      "Resource": "*",
+      "Condition": {
+        "StringEquals": {
+          "rds:DatabaseClass": [
+            "db.r3.8xlarge",
+            "db.m4.10xlarge"
+          ]
+        }
+      }
+    },
+    {
+      "Sid": "DenyPIOPSCreate",
+      "Effect": "Deny",
+      "Action": "rds:CreateDBInstance",
+      "Resource": "*",
+      "Condition": {
+        "NumericNotEquals": {
+          "rds:Piops": "0"
+        }
+      }
+    }
+  ]
+}

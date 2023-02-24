@@ -1,0 +1,94 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyKMSIfDeveloper",
+      "Effect": "Deny",
+      "Action": [
+        "kms:RetireGrant",
+        "kms:RevokeGrant",
+        "kms:ScheduleKeyDeletion",
+        "kms:CancelKeyDeletion",
+        "kms:DisableKey",
+        "kms:Delete*"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "DenyEC2InstanceIfDeveloper",
+      "Effect": "Deny",
+      "Action": [
+        "ec2:StopInstances",
+        "ec2:TerminateInstances"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "DenyS3BucketIfDeveloper",
+      "Effect": "Deny",
+      "Action": [
+        "s3:DeleteBucket"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "DenyLambdaIfDeveloper",
+      "Effect": "Deny",
+      "Action": [
+        "lambda:DeleteFunction"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "DenyRDSIfDeveloper",
+      "Effect": "Deny",
+      "Action": [
+        "rds:DeleteDBCluster",
+        "rds:DeleteDBInstance"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "DenyELBIfDeveloper",
+      "Effect": "Deny",
+      "Action": [
+        "elasticloadbalancing:DeleteLoadBalancer"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "DenyRoute53IfDeveloper",
+      "Effect": "Deny",
+      "Action": [
+        "route53:DeleteHealthCheck",
+        "route53:DeleteHostedZone",
+        "route53:DeleteTrafficPolicy"
+      ],
+      "Resource": [
+        "*"
+      ]
+    },
+    {
+      "Sid": "DenyCloudfrontIfDeveloper",
+      "Effect": "Deny",
+      "Action": [
+        "cloudfront:DeleteDistribution"
+      ],
+      "Resource": [
+        "*"
+      ]
+    }
+  ]
+}
