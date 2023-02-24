@@ -174,7 +174,7 @@ module "users" {
 
 ## 사용자 그룹의 사용자 맴버쉽 매트릭스 정의 
 
-사용자 액세스 권한 매트릭스를 아래와 같이 정의 합니다.
+사용자 액세스 권한 매트릭스를 아래와 같이 정의 할 수 있습니다.
 
 
 | User                    | Admin | Developer | DBA | SysAdm | Viewer | 
@@ -222,11 +222,14 @@ users = [
 <br>
 
 ### 사용자 그룹 맴버쉽 프로비저닝 예시  
-`appleDeveloperGroup` 그룹과 `appleDBAGroup` 그룹의 맴버쉽을 보면 다음과 같습니다. 
+
+사용자 그룹 현황은 다음과 같습니다.   
 
 ![img.png](./images/img.png)
 
 <br>
+
+`appleDeveloperGroup`, `appleDBAGroup` 사용자 그룹의 맴버쉽이 잘 적용되었는지 확인할 수 있습니다. 
 
 - `appleDeveloperGroup` 사용자 그룹의 맴버쉽  
 
@@ -243,7 +246,7 @@ users = [
 
 ## 사용자 그룹의 액세스 권한 매트릭스 정의
 
-사용자 그룹에 할당할 액세스 정책을 매트릭스로 정의하면 다음과 같습니다.  
+사용자 그룹에 할당할 액세스 정책을 매트릭스로 다음과 같이 정의할 수 있습니다.   
 
 | Policy                             | Admin | Developer | DBA | SysAdm | Viewer |
 |------------------------------------|:-----:|:---------:|:---:|:------:|:------:|
