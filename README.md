@@ -445,3 +445,5 @@ terraform destroy
 ## References
 
 - [AWS IAM User Management Practice](https://symplesims.github.io/aws/security/2023/02/15/iam-user-management-practice.html)  
+- [IAM Getting Start](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html)   
+- [IAM Policies examples](https://github.com/awsdocs/iam-user-guide/tree/main/doc_source)   
