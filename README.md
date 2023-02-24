@@ -2,6 +2,9 @@
 
 사용자 그룹을 생성하고 액세스 정책 및 사용자 (맴버쉽) 추가를 자동화 하는 테라폼 모듈 입니다.  
 
+
+예제를 바로 실행 하려면 <a href="#build">Build</a> 를 참조 하세요. 
+
 <br>
 
 ## Usage
@@ -363,6 +366,18 @@ module.users.DenyIPAddressPolicy_arn,
 
 
 ## Build
+
+### Pre-Requisite
+
+프로비저닝 하려면 사전에 Terraform 을 실행할 수 있는 AWS 액세스 환경이 준비 되어야 합니다.    
+
+[AWS CLI 설치](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+및 [AWS Configure Profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) 환경을 구성 하세요. 
+
+`mystack` 프로파일 구성 예시 
+```
+aws configure --profile mystack
+```
 
 ### Simple 예제 
 
